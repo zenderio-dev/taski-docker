@@ -1,4 +1,8 @@
 Django==3.2.3
 djangorestframework==3.12.4
+<<<<<<< HEAD
 django-cors-headers==3.13.0
 psycopg2-binary==2.9.3
+=======
+django-cors-headers==3.13.0
+>>>>>>> 99c722f8924e356e5af21d50502c222ebf34dc1e

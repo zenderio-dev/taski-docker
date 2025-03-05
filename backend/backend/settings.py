@@ -1,5 +1,8 @@
 from pathlib import Path
+<<<<<<< HEAD
 import os
+=======
+>>>>>>> 99c722f8924e356e5af21d50502c222ebf34dc1e
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -62,6 +65,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
+<<<<<<< HEAD
         # Меняем настройку Django: теперь для работы будет использоваться
         # бэкенд postgresql
         'ENGINE': 'django.db.backends.postgresql',
@@ -70,6 +74,10 @@ DATABASES = {
         'PASSWORD': os.getenv('POSTGRES_PASSWORD', ''),
         'HOST': os.getenv('DB_HOST', ''),
         'PORT': os.getenv('DB_PORT', 5432)
+=======
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+>>>>>>> 99c722f8924e356e5af21d50502c222ebf34dc1e
     }
 }
 
@@ -112,8 +120,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+<<<<<<< HEAD
 STATIC_ROOT = BASE_DIR / 'collected_static'
 
+=======
+>>>>>>> 99c722f8924e356e5af21d50502c222ebf34dc1e
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
